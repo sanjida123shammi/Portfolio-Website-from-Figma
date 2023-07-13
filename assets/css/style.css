@@ -1,0 +1,385 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Playfair+Display:wght@400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+/* Global CSS */
+body{
+	background: #F9FAFF; 
+	font-family: 'Nunito', sans-serif;
+	color: #828282;
+}
+h1, h2, h3{
+	font-family: 'Playfair Display', serif;
+	color: #25282B;
+}
+ul{
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	color: #25282B;
+}
+.no-padding{
+	padding: 0;
+}
+.mb-75{
+	margin-bottom: 75px;
+}
+.title-border{
+	background: #FDC435;
+	margin: 0 auto;
+	width: 8%;
+	height: 5%;
+}
+
+
+/* Header Section */
+.header-section{
+	position: relative;
+}
+.header-section .banner-model{
+	position: absolute;
+	width: 680px;
+	top: 0;
+	right: 0;
+	z-index: -1;
+}
+.navbar .navbar-brand{
+	font-family: 'Comfortaa', cursive;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 32.4px;
+}
+.navbar .nav-item{
+	padding: 0 0 0 50px;
+	font-family: 'Raleway', sans-serif;	
+}
+.navbar .nav-link{
+	position: relative;
+	overflow: hidden;
+	font-size: 18px;
+	font-weight: 500;
+}
+.navbar .nav-link::before{
+	content: "";
+	position: absolute;
+	background: #25282B;
+	width: 60%;
+	height: 5.5%;
+	bottom: 0;
+	left: -100%;
+	transition: all 0.3s ease-in-out;
+}
+.navbar .nav-link:hover::before{
+	left: 23%;
+}
+.header-section .intro-content{
+	padding: 55px 58px 0 12px;
+}
+.header-section .intro-content h4{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 27px;
+	color: #FDC435;
+}
+.header-section .intro-content h1{
+	margin: 20px 0;
+	font-weight: 700;
+	font-size: 58px;
+	line-height: 76px;
+}
+.header-section .intro-content p{
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+}
+.header-section .intro-content ul li{
+	padding: 20px 20px 0 0;
+	list-style: none;
+	display: inline-block;
+}
+.header-section .intro-content ul li a{
+	border-radius: 8px;
+	padding: 8px 24px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	transition: all 0.3s ease-in-out;
+}
+.header-section .intro-content ul li .btn-project{
+	background: #FDC435;
+	border: 2px solid #FDC435;
+}
+.header-section .intro-content ul li .btn-project:hover{
+	background: #fff;
+	border: 2px solid #25282B;
+}
+.header-section .intro-content ul li .btn-linkedin{
+	border: 2px solid #25282B;
+}
+.header-section .intro-content ul li .btn-linkedin:hover{
+	background: #FDC435;
+	border: 2px solid #FDC435;
+}
+
+
+/* Project Section */
+.project-section{
+	margin: 175px 0 130px;
+}
+.project-section .project-box{
+	margin-top: 75px;
+}
+.project-section .project-content-left{
+	background: #fff;
+	padding: 134px 50px;
+	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
+}
+.project-section .project-content-right{
+	background: #fff;
+	padding: 134px 50px;
+	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
+}
+.project-section h2{
+	text-align: center;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 72px;
+}
+.project-section h3{
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 60px;
+}
+.project-section p{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+}
+.project-box .btn-portfolio{
+	background: #fff;
+	border: 1px solid #25282B;
+	border-radius: 24px;
+	padding: 8px 24px;
+	width: 150px;
+	height: 43px;
+	font-weight: 700;
+	line-height: 27px;
+	transition: all 0.3s ease-in-out;
+}
+.project-box .btn-portfolio:hover{
+	background: #FDC435;
+	border: 1px solid #FDC435;
+}
+.project-box .image-right{
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+.project-box .image-left{
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+}
+.mobile-item{
+	display: none;
+}
+
+
+/* Social Media Section */
+.social-media-section{
+	padding-bottom: 170px;
+}
+.social-media-section .social-media{
+	text-align: center;
+}
+.social-media-section .social-media ul li{
+	list-style: none;
+	display: inline-block;
+}
+.social-media-section .social-media ul li a .fa-brands,
+.social-media-section .social-media ul li a .fa-solid{
+    padding: 0 25px;
+	font-size: 50px;
+	transition: all 0.3s ease-in-out;
+}
+.social-media-section .social-media ul li a .fa-brands:hover,
+.social-media-section .social-media ul li a .fa-solid:hover{
+	color: #FDC435;
+}
+.social-media-section .social-media p{
+	padding: 10px 0;
+	text-align: center;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+
+/* Footer Section */
+footer{	
+	position: relative;
+	padding-bottom: 12%;
+}
+footer .image-footer{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+}
+
+
+/* About Me CSS */
+.header-section .about-row{
+	margin: 50px 0 145px;
+}
+.header-section .about-row .about-content h2{
+	margin: 0 0 20px;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 70px;
+}
+.header-section .about-row .about-content p{
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+}
+.header-section .about-row .about-content .btn-resume{
+	background: #FDC435;
+	display: inline-block;
+	border: 2px solid #FDC435;
+	border-radius: 8px;
+	margin: 20px 20px 0 0;
+	padding: 8px 24px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	transition: all 0.3s ease-in-out;
+}
+.header-section .about-row .about-content .btn-resume:hover{
+	background: #fff;
+	border: 2px solid #25282B;
+}
+.header-section .about-row .about-model{
+	width: 100%;
+}
+
+
+/* Contact CSS */
+.contact-section{
+	margin-bottom: 80px;
+}
+.contact-section h2{
+	text-align: center;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 72px;
+}
+.contact-border {
+    width: 22%;
+    height: 0.6%;
+}
+.contact-section form{
+	margin: 40px 0 75px;
+}
+.contact-section form label{
+	margin: 25px 0 8px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: #25282B;
+}
+.contact-section form .form-control{
+	outline: none;
+	box-shadow: none;
+	font-size: 18px;
+}
+.contact-section form .btn-submit{
+    background: #FDC435;
+    border: 2px solid #FDC435;
+    border-radius: 5px;
+    margin-top: 25px;
+    padding: 5px;
+	width: 88px;
+    float: right;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+.contact-section form .btn-submit:hover{
+	background: #fff;
+}
+
+
+/* Responsive Tablet CSS */
+@media (min-width: 576px) and (max-width: 768px){
+	.header-section .intro-content { margin-top: 65%;		padding: 55px 0px 0px; }
+	.header-section .intro-content h1 { margin: 18px 0;	font-size: 50px;	line-height: 60px; }
+	.header-section .intro-content p { font-size: 21px;  	line-height: 32px; }
+	.header-section .banner-model { width: 565px; }
+	.project-section { margin: 75px 45px 90px; }
+	.project-section .headline { margin-bottom: 70px; }
+	.project-section h2 { font-size: 45px;  	line-height: 65px; }
+	.project-section h3 { font-size: 32px;  	line-height: 50px; }
+	.project-section .project-box { margin-top: 40px; }
+	.project-section .project-content-right { border-radius: 25px 25px 0 0;	padding: 30px 40px 45px; }
+	.project-section .project-content-left { border-radius: 25px 25px 0 0;		padding: 30px 40px 45px; }
+	.project-box .image-right { border-radius: 0 0 25px 25px; }
+	.project-box .image-left { border-radius: 0 0 25px 25px;	margin-bottom: 35px; }
+	.desktop-item{ display: none; }
+	.mobile-item{ display: initial; }
+	.social-media-section { padding-bottom: 80px; }
+	.social-media-section .social-media ul li a .fa-brands, 
+	.social-media-section .social-media ul li a .fa-solid { padding: 0 10px;	font-size: 40px; }
+	.social-media-section .social-media p { padding: 5px 0 25px; }
+	footer { padding-bottom: 0; }
+
+	/* About Responsive */
+	.header-section .about-row { margin: 0px 0 100px; }
+	.header-section .about-row .about-content { margin: 20px 0px 40px 4px;	text-align: center; }
+	.header-section .about-row .about-content h2 { font-size: 35px; 	line-height: 45px; }
+	.header-section .about-row .about-content p { font-size: 20px;  	line-height: 32px; }
+	.header-section .about-row .about-content .btn-resume { margin: 15px 20px 10px 0; }
+	.header-section .about-row .about-model { width: 75%;	display: block;		margin: 0 auto; }
+
+	/* Contact CSS */
+	.contact-section h2 { font-size: 35px;  	line-height: 45px; }
+	.contact-section form { margin: 20px 0 65px; }
+}
+
+
+/* Responsive Mobile CSS */
+@media (min-width: 320px) and (max-width: 576px){
+	.header-section .intro-content {	padding: 200px 0px 0px 8px; }
+	.header-section .intro-content h1 { margin: 20px 0;	font-size: 36px;	line-height: 45px; }
+	.header-section .intro-content p { font-size: 19px;  	line-height: 28px; }
+	.header-section .banner-model { width: 320px; }
+	.project-section { margin: 60px 20px; }
+	.project-section .headline { margin-bottom: 70px; }
+	.project-section .project-box { margin-top: 40px; }
+	.project-section .project-content-right { border-radius: 25px 25px 0 0;	padding: 20px 32px 40px; }
+	.project-section .project-content-left {border-radius: 25px 25px 0 0;		padding: 20px 32px 40px; }
+	.project-section h2 { font-size: 35px;	line-height: 48px; }
+	.project-section h3 { font-size: 30px;  	line-height: 50px; }
+	.project-box .image-right { border-radius: 0 0 25px 25px; }
+	.project-box .image-left { border-radius: 0 0 25px 25px;	margin-bottom: 35px; }
+	.desktop-item{ display: none; }
+	.mobile-item{ display: initial; }
+	.social-media-section {	padding-bottom: 100px; }
+	.social-media-section .social-media ul li a .fa-brands, 
+	.social-media-section .social-media ul li a .fa-solid { padding: 0 10px;	font-size: 40px; }
+	.social-media-section .social-media p { padding: 0px;	font-size: 15px;	line-height: 18px; }
+	footer{	padding-bottom: 0;}
+
+	/* About responsive */
+	.header-section .about-row { margin: 10px 0 70px; } 
+	.header-section .about-row .about-content { margin: 0px 0px 45px;	text-align: center; }
+	.header-section .about-row .about-content h2 { font-size: 35px; 	line-height: 40px; }
+	.header-section .about-row .about-content p { font-size: 19px;   	line-height: 30px; }
+	.header-section .about-row .about-content .btn-resume { margin: 10px 0; }
+	.header-section .about-row .about-model { width: 75%;	display: block;		margin: 0 auto; }
+
+	/* Contact CSS */
+	.contact-section h2 {font-size: 35px;  	line-height: 48px;}
+	.contact-section form {margin: 20px 0 65px;}
+}
